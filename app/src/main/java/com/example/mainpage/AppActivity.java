@@ -1,5 +1,7 @@
 package com.example.mainpage;
 
+import static android.widget.Button.*;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,24 +22,23 @@ public class AppActivity extends AppCompatActivity {
     FirebaseUser user;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.appactivity);
 
         auth = FirebaseAuth.getInstance();
-        Button = findViewById(R.id.Logout);
-        textView = findViewById(R.id.user_details);
-        user= auth.getCurrentUser();
+        Button Logout = findViewById(R.id.Logout);
 
-        if (user == null){
+        user = auth.getCurrentUser();
+
+        if (user == null) {
             Intent intent = new Intent(getApplicationContext(), Loginactivity.class);
             startActivity(intent);
             finish();
-    }
-        else {
+        } else {
             textView.setText(user.getEmail());
         }
-        Button.setOnClickListener(new View.OnClickListener() {
+        Logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
@@ -46,4 +47,6 @@ public class AppActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
 }
