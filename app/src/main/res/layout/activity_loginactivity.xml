@@ -16,7 +16,7 @@
         android:padding="30dp"
         android:drawablePadding="30dp"
         android:drawableRight="@drawable/baseline_person_24"
-        android:id="@+id/logPasswd"
+        android:id="@+id/Email"
         android:textSize="25dp"/>
     <EditText
         android:layout_width="match_parent"
@@ -25,32 +25,35 @@
         android:hint="Password"
         android:background="#30ffffff"
         android:layout_margin="18dp"
-        android:layout_below="@+id/logPasswd"
+        android:layout_below="@+id/Email"
         android:padding="30dp"
         android:drawablePadding="30dp"
         android:drawableRight="@drawable/baseline_key_24"
-        android:id="@+id/Password1"
+        android:id="@+id/Password"
         android:textSize="25dp"/>
     <Button
-        android:id="@+id/CreateAccount"
+        android:id="@+id/Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Log In"
-        android:layout_marginTop="200sp"
+        android:layout_marginTop="100sp"
         android:layout_marginBottom="20sp"
-        android:layout_below="@+id/logPasswd"
+        android:layout_below="@+id/Password"
         android:padding="10dp"
         android:textSize="20dp"
         />
+
     <TextView
+        android:id="@+id/RegisterNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/CreateAccount"
-        android:layout_marginTop="15dp"
-        android:gravity="center_horizontal"
-        android:text="Register"
+        android:layout_below="@id/Login"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/register"
         android:textColor="@color/white" />
+
 
 
 </RelativeLayout>
