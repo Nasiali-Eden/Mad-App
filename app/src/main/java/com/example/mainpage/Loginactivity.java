@@ -63,8 +63,8 @@ public class Loginactivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String email, password;
-                email = editTextEmail.getText().toString();
-                password = editTextPassword.getText().toString();
+                email =  String.valueOf(editTextEmail.getText());
+                password = String.valueOf(editTextPassword.getText());
 
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(Loginactivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
