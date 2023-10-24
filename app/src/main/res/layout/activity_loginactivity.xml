@@ -40,8 +40,17 @@
         android:layout_marginTop="200sp"
         android:layout_marginBottom="20sp"
         android:layout_below="@+id/logPasswd"
-        android:padding="30dp"
-        android:textSize="35dp"
+        android:padding="10dp"
+        android:textSize="20dp"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccount"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="@color/white" />
+
 
 </RelativeLayout>
