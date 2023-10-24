@@ -1,5 +1,7 @@
 package com.example.mainpage;
 
+import static android.widget.Button.*;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
